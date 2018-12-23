@@ -10,7 +10,7 @@ clear
 VINSTALL=""
 echo "Setting up..."
 #sudo apt update
-# sudo apt-get install p7zip -y
+#sudo apt-get install p7zip -y
 
 startmenu() {
 	banner
@@ -130,11 +130,10 @@ kvmlist() {
 vbmenu() {
 	banner
 	printf "\e[92m  Build-a-Lab with KVM or VirtualBox...\n"
-	printf "  Install Libvirt/KVM                                        =  1\n"
-	printf "  Run Virt-Manager                                           =  2\n"
-	printf "  List KVM Virtual Machines                                  =  3\n"
-	printf "  Start a headless KVM Virtual Machine                       =  4\n"
-	printf "  Stop a headless KVM Virtual Machine                        =  5\n"
+	printf "  Install VirtualBox                                         =  1\n"
+	printf "  Run VirtualBox                                             =  2\n"
+	printf "  Start a headless VirtualBox Virtual Machine                =  4\n"
+	printf "  Stop a headless VirtualBox Virtual Machine                 =  5\n"
 	printf "  Exit to Previous Menu                                      = 99\n"
 	printf "\n"
 	read -p $'  Choose an option: \e[37;1m' option
